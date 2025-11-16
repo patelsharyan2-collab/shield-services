@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shield Industrial Services</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {
+  font-family: 'Times New Roman', serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: #FEFBF5;
+  color: #333;
+  line-height: 1.6;
+}
+/* Header */
+header {
+  background-color: #007ACC;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+header p {
+  font-size: 18px;
+  margin-top: 5px;
+}
+/* Dashboard Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #005f99;
+  padding: 10px 0;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+nav a {
+  color: white;
+  margin: 5px 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  color: #FF9900;
+}
+/* Sections */
+section {
+  padding: 25px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+h2 {
+  color: #FF9900;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+/* Paragraphs */
+#about p {
+  font-size: 16px;
+}
+/* Two-column grid */
+.grid-two-column {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+/* Boxes */
+.box {
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 130px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+  font-size: 14px;
+}
+.box-yellow { background-color: #FFF9C4; border-left:6px solid #FFEB3B; }
+.box-orange { background-color: #FFE0B2; border-left:6px solid #FF9800; }
+.box-blue { background-color: #E6F7FF; border-left:6px solid #007ACC; }
+.box ul { padding-left: 18px; margin:0; }
+
+/* Contact Form */
+form {
+  background-color: #FFF3E6;
+  padding: 25px;
+  border-radius: 8px;
+  border-left: 6px solid #007ACC;
+  max-width: 600px;
+  margin: auto;
+}
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 12px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+form input[type="submit"] {
+  background-color: #007ACC;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+form input[type="submit"]:hover {
+  background-color: #005f99;
+}
+/* Success message */
+#success-message {
+  display: none;
+  margin-top: 10px;
+  font-family:'Times New Roman', serif;
+  font-size: 14px;
+  color: #4F8A10;
+  background-color: #DFF2BF;
+  padding: 10px;
+  border-left: 6px solid #4F8A10;
+  border-radius: 5px;
+  text-align: center;
+}
+/* WhatsApp Button */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+}
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #007ACC;
+  color: white;
+  margin-top: 20px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .grid-two-column {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+<!-- Header -->
+<header>
+  <h1>Shield Industrial Services</h1>
+  <p>Protecting People, Enhancing Operations, Ensuring Compliance</p>
+</header>
+<!-- Dashboard -->
+<nav>
+  <a href="#about">ABOUT US</a>
+  <a href="#services">OUR SERVICES</a>
+  <a href="#pricing">PRICING</a>
+  <a href="#why">WHY CHOOSE US</a>
+  <a href="#contact">CONTACT US</a>
+</nav>
+<!-- About Us -->
+<section id="about">
+  <h2>ABOUT US</h2>
+  <p>Shield Industrial Services is a leading consulting firm in Kenya, dedicated to advancing occupational safety, operational efficiency, and environmental compliance for organizations across various sectors. Shield Industrial Services help businesses reduce risks, strengthen safety cultures, and meet both local and international regulatory standards with confidence. Our experienced team delivers practical, data-driven solutions that address real workplace challenges while improving productivity and operational continuity. By combining technical expertise, reliability, and a client-focused approach, Shield Industrial Services turn complex safety and compliance requirements into clear, achievable strategies. This allows organizations to protect their workforce, avoid costly disruptions, and focus on sustainable growth with complete peace of mind.</p>
+</section>
+<!-- Services -->
+<section id="services">
+  <h2>OUR SERVICES</h2>
+  <div class="grid-two-column">
+    <div class="box box-yellow">
+      <h3>Occupational Safety Consulting</h3>
+      <ul>
+        <li>Risk assessments and hazard identification</li>
+        <li>Development of safety policies and procedures</li>
+        <li>Safety training programs for employees and management</li>
+        <li>Incident investigation and reporting</li>
+      </ul>
+    </div>
+    <div class="box box-orange">
+      <h3>Operational Safety & Efficiency</h3>
+      <ul>
+        <li>Standard operating procedure (SOP) reviews</li>
+        <li>Process risk audits and operational efficiency assessments</li>
+        <li>Machinery safety inspections and maintenance planning</li>
+        <li>Emergency preparedness and response planning</li>
+      </ul>
+    </div>
+    <div class="box box-blue">
+      <h3>Environmental Audits & Compliance</h3>
+      <ul>
+        <li>Environmental impact assessments (EIA)</li>
+        <li>Waste management and pollution control audits</li>
+        <li>Compliance monitoring with NEMA and other environmental regulations</li>
+        <li>Sustainability and resource efficiency recommendations</li>
+      </ul>
+    </div>
+    <div class="box box-yellow">
+      <h3>Training & Capacity Building</h3>
+      <ul>
+        <li>Safety workshops and seminars</li>
+        <li>Employee and management certification programs</li>
+        <li>Fire safety, first aid, and emergency response training</li>
+      </ul>
+    </div>
+    <div class="box box-orange">
+      <h3>Project Safety Management</h3>
+      <ul>
+        <li>Safety oversight for construction, industrial, and manufacturing projects</li>
+        <li>Contractor and subcontractor compliance monitoring</li>
+        <li>On-site safety inspections and reporting</li>
+      </ul>
+    </div>
+    <div class="box box-blue">
+      <h3>Risk Management & Consultancy</h3>
+      <ul>
+        <li>Enterprise-wide risk assessments</li>
+        <li>Hazard identification and mitigation strategies</li>
+        <li>Business continuity and emergency planning</li>
+        <li>Compliance advisory and regulatory gap analysis</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- Pricing -->
+<section id="pricing">
+  <h2>PRICING</h2>
+  <div class="grid-two-column">
+    <div class="box box-yellow">
+      <h3>Basic Safety Audit – Negotiable</h3>
+      <ul>
+        <li>Workplace risk assessment and safety checklist</li>
+        <li>Safety recommendations report</li>
+      </ul>
+    </div>
+    <div class="box box-orange">
+      <h3>Comprehensive Safety & Environmental Audit – Negotiable</h3>
+      <ul>
+        <li>Occupational, operational, and environmental audit</li>
+        <li>Actionable improvement plan and staff training recommendations</li>
+      </ul>
+    </div>    
+  </div>
+</section>
+<!-- Why Choose Us -->
+<section id="why">
+  <h2>WHY CHOOSE US</h2>
+  <div class="grid-two-column">
+    <div class="box box-yellow">
+      <strong>1. Expert Technical Knowledge</strong>
+      <p>Our team has extensive experience in occupational safety, operational efficiency, and environmental compliance, ensuring your audits and assessments meet the highest professional standards.</p>
+    </div>
+    <div class="box box-orange">
+      <strong>2. Regulatory Compliance</strong>
+      <p>We help organizations comply with Kenyan regulations, NEMA standards, OSHA guidelines, and other legal requirements, reducing the risk of penalties or shutdowns.</p>
+    </div>
+    <div class="box box-blue">
+      <strong>3. Practical & Actionable Solutions</strong>
+      <p>We provide recommendations that are realistic, implementable, and tailored to your specific business operations.</p>
+    </div>
+    <div class="box box-yellow">                 
+      <strong>4. Comprehensive Services</strong>
+      <p>From safety audits, operational assessments, and environmental evaluations to training programs and project safety management, we cover all aspects of workplace safety and compliance.</p>
+    </div>
+    <div class="box box-orange">
+      <strong>5. Reliability & Timeliness</strong>
+      <p>We deliver thorough, timely reports and follow-up support so your organization can act immediately on safety and compliance issues.</p>
+    </div>
+    <div class="box box-blue">
+      <strong>6. Confidentiality & Professionalism</strong>
+      <p>All information, reports, and findings are handled discreetly with the highest level of professionalism.</p>
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section id="contact-us" style="padding:40px 20px; max-width:700px; margin:auto; font-family:'Times New Roman', serif;">
+  <h2 style="color:#FF9900; text-transform:uppercase;">CONTACT US</h2>
+  <!-- Form -->
+  <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="contact">
+    <input type="hidden" name="bot-field">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" required>
+    <label for="email">Your Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+    <label for="service">Type of Service:</label>
+    <select id="service" name="service" required>
+      <option value="">--Select Service--</option>
+      <option value="Occupational Safety Consulting">Occupational Safety Consulting</option>
+      <option value="Operational Safety & Efficiency">Operational Safety & Efficiency</option>
+      <option value="Environmental Audits & Compliance">Environmental Audits & Compliance</option>
+      <option value="Training & Capacity Building">Training & Capacity Building</option>
+      <option value="Project & Risk Management">Project & Risk Management</option>
+    </select>
+    <label for="urgency">Work Urgency:</label>
+    <select id="urgency" name="urgency" required>
+      <option value="">--Select Urgency--</option>
+      <option value="Very Urgent">Very Urgent</option>
+      <option value="Urgent">Urgent</option>
+      <option value="Normal">Normal</option>
+    </select>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
+    <input type="submit" value="Send Message" style="background-color:#007ACC; color:white; font-size:16px; padding:10px 20px; border:none; border-radius:5px; cursor:pointer;">
+  </form>
+  <!-- Success Notification -->
+  <div id="form-success" style="display:none; margin-top:20px; padding:15px; background-color:#d4edda; color:#155724; border:1px solid #c3e6cb; border-radius:5px; font-size:14px; text-align:center;">
+    ✅ Thank you for contacting us! We have received your message and will respond shortly.
+  </div>
+  <!-- Contact Info -->
+  <div style="padding:20px; max-width:600px; margin:auto; background-color:#FFF9C4; border-left:6px solid #007ACC; border-radius:8px; font-family:'Times New Roman', serif; font-size:14px; margin-top:20px;">
+    <p><strong>Call / WhatsApp:</strong> <a href="https://wa.me/254722604012" target="_blank" style="color:#007ACC; text-decoration:none;">+254 722 604 012</a></p>
+    <p><strong>Email:</strong> <a href="mailto:shieldservices2023@gmail.com" style="color:#007ACC; text-decoration:none;">shieldservices2023@gmail.com</a></p>
+    <p><strong>Location:</strong> Nairobi, Kenya</p>
+  </div>
+</section>
+<script>
+  const form = document.getElementById('contact-form');
+  const successDiv = document.getElementById('form-success');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Validate form (Netlify handles required fields, but this prevents empty submissions)
+    if(!form.checkValidity()){
+      alert("Please fill in all required fields.");
+      return;
+    }
+    // Prepare form data for Netlify
+    const formData = new FormData(form);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      // Show success message
+      successDiv.style.display = "block";
+      form.reset();
+
+      // Hide success message after 8 seconds
+      setTimeout(() => {
+        successDiv.style.display = "none";
+      }, 8000);
+    })
+    .catch((error) => {
+      alert("Error submitting the form. Please try again: " + error);
+    });
+  });
+</script>
+</section>
+<script>
+  const form = document.getElementById('contact-form');
+  const successDiv = document.getElementById('form-success');
+  form.addEventListener('submit', function(e) {
+    e.preventDefault(); // prevent default reload
+
+    // Simple validation
+    if(!form.checkValidity()) {
+      alert("Please fill in all required fields.");
+      return;
+    }
+    // Submit using Netlify Forms
+    const formData = new FormData(form);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString()
+    })
+    .then(() => {
+      // Show success message
+      successDiv.style.display = "block";
+      form.reset();
+
+      // Hide message after 7 seconds
+      setTimeout(() => {
+        successDiv.style.display = "none";
+      }, 7000);
+    })
+    .catch((error) => alert("Error submitting the form: " + error));
+  });
+</script>
+</section>
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/254722604012?text=Hello!%20I%20would%20like%20to%20enquire%20about%20your%20services" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<!-- Footer -->
+<footer>
+  © 2025 Shield Industrial Services — Protecting People, Enhancing Operations, Ensuring Compliance
+</footer>
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const urgency = document.getElementById('urgency').value;
+  const serviceType = document.getElementById('serviceType').value;
+  const message = document.getElementById('message').value.trim();
+
+  if(!name || !email || !phone || !urgency || !serviceType || !message){
+    alert("Please fill all fields before submitting.");
+    return;
+  }
+  const successMsg = document.getElementById('success-message');
+  successMsg.innerHTML = `✅ Thank you for contacting us!<br>We have received your message.<br>Email: ${email}<br>Phone: ${phone}<br>We will respond shortly.`;
+  successMsg.style.display = 'block';
+  setTimeout(() => { successMsg.style.display = 'none'; }, 5000);
+  document.getElementById('contactForm').reset();
+});
+<div style="padding:20px; max-width:600px; margin:auto; background-color:#FFF9C4; border-left:6px solid #007ACC; border-radius:8px; font-family:'Times New Roman', serif; font-size:14px;">
+  <p><strong> </strong> <a href="tel:+254722604012" style="color:#007ACC; text-decoration:none;">+254 722 604 012</a></p>
+  <p><strong></strong> <a href="mailto:shieldservices2023@gmail.com" style="color:#007ACC; text-decoration:none;">shieldservices2023@gmail.com</a></p> 
+</div>
+</script>
+</body>
+</html>
